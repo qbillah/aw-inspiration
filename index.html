@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AW Inspiration - Music</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="main.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.17/fullpage.min.js" integrity="sha512-zAHJKGyoPf2Y20Wi4uo32sa/vSvwKfY4tYUt6gJfmkA79X0wt5ZfaxL5GqJ5cMnmvGslWi5PKTo51rHRZqYbJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="fullpage">
+            <section class="section" id="opening">
+                <h1 class="red">QUAZI Y. BILLAH</h1>
+                <h1 class="green">AW INSPIRATION: MUSIC</h1>
+                <h1>*NOT SPONSORED BY SPOTIFY</h1>
+            </section>
+            <section class="section" id="second">
+                <h1 class="green">MY FIRST:</h1>
+                <h1 class="red">MUSICAL MEMORY</h1>
+                <div style="display: block; width: 40em;">
+                    <p>
+                        My dad bought me a toy tape deck and cassette. The cassette had one song on it that I'd have on repeat all day long. The song was called 'Coffee House' by Bengali singer/songwritter Manna Dey
+                    </p>
+                </div>
+            </section>
+            <section class="section" id="third">
+                <h1 class="blue">MY PARENTS & MUSIC</h1>
+                <div style="display: block; width: 40em;">
+                    <p>
+                        My parents have always encouraged me to listen to music and be open to things I've never heard before. I think music is so inspirational to me because of them. My mom used to practice singing when she was younger and my dad is just a huge fan of music.
+                    </p>
+                </div>
+            </section>
+            <section class="section" id="fourth"> <!--SLIDER-->
+                <h1 class="green">MUSIC & ME</h1>
+                <div style="display: block; width: 40em;">
+                    <p>
+                        Music inspires me everyday and is a very important part of my daily life. I think the perfect song can make anything happen. It might help spark an idea or make you feel great after a terrible day. When you're listening to a song you're listening to someone's feelings and energy. There's a connection there which I find to be quite inspiring.
+                    </p>
+                </div>
+                <div style="display: block; width: 40em;">
+                    <p>
+                        Some things I've heard music on →
+                    </p>
+                </div>
+                <div class="music-evol">
+                    <img src="/imgs/radio.png">
+                    <img src="/imgs/cdicon.png">
+                    <img src="/imgs/frostwire.png">
+                    <img src="/imgs/itunesold.webp">
+                    <img src="/imgs/Ipod_1G.png">
+                    <img src="/imgs/spotify.webp">
+                </div>
+            </section>
+            <section class="section" id="top-albums">
+                <div class="top-album-title">
+                    <h1 class="red">SOME OF MY</h1>
+                    <h1 class="blue">ALL-TIME FAV ALBUMS</h1>
+                </div>
+                <div class="records">
+                    <div class="rec-wrap" data-album="Nirvana - Bleach"><div class="rec nir"></div></div>
+                    <div class="rec-wrap" data-album="Black Country, New Road - Ants From Up There"><div class="rec ants"></div></div>
+                    <div class="rec-wrap" data-album="Black Sabbath - Paranoid"><div class="rec blk"></div></div>
+                    <div class="rec-wrap" data-album="TOOL - Undertow"><div class="rec tl"></div></div>
+                    <div class="rec-wrap" data-album="Run The Jewels - RTJ 2"><div class="rec rtj"></div></div>
+                    <div class="rec-wrap" data-album="Sevdaliza - Shabrang"><div class="rec sev"></div></div>
+                    <div class="rec-wrap" data-album="Opus Kink - Til the Stream Runs Dry"><div class="rec knk"></div></div>
+                    <div class="rec-wrap" data-album="Modest Mouse - Lonesome Crowded West"><div class="rec ms"></div></div>
+                    <div class="rec-wrap" data-album="Joy Division - Unknown Pleasures"><div class="rec jd"></div></div>
+                </div>
+                <div class="select-an-album">
+                    <a id="album-display">* Hover over an album *</a>
+                </div>
+            </section>
+
+        </div>
+        <script>
+            window.addEventListener('load' , function(){
+                let recHover = document.querySelectorAll('div.rec-wrap');
+                let disp = document.getElementById('album-display');
+                recHover.forEach(function(rec){
+                    rec.addEventListener('mouseenter' , function(){
+                        disp.innerHTML = rec.dataset.album;
+                    });
+                    rec.addEventListener('mouseleave' , function(){
+                        disp.innerHTML = "* Hover over an album *";
+                    });
+                });
+            });
+            
+            new fullpage('#fullpage', {
+                autoScrolling:true,
+                scrollHorizontally: true
+            });
+        </script>
+    </body>
+</html>

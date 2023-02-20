@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html , body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    font-stretch: expanded;
+}
+
+p{
+    font-size: 1.25em;
+    font-family: monospace;
+}
+
+section , div.section{
+    width: 100vw;
+    height: 100vh;
+}
+
+section#opening{
+    background-color: #f474c1;
+    padding: 1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#second , section#third , section#fourth{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#second{
+    background-color: #12d861;
+} 
+
+section#third{
+    background-color: #ddec3c;
+} 
+
+section#fourth{
+    background-color: #f474c1;
+}
+
+section h1{
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    font-size: 2em;
+    font-weight: 900;
+    margin: 0 auto;
+    text-align: center;
+    transform: scaleX(1.5) scaleY(2.5);
+    transform-origin: 50%;
+    margin-bottom: 48px;
+}
+
+h1.red{
+    background-color: #fed1d6;
+    color: #e90d29;
+}
+
+h1.green{
+    background-color: #d0f46c;
+    color: #4e3658;
+}
+
+h1.blue{
+    background-color: #3900e5;
+    color: #98eeaf;
+}
+
+section#opening p{
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.records{
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddec3c;
+}
+
+#top-albums{
+    position: relative;
+}
+
+div.rec-wrap{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    perspective: 500px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -75px;
+}
+
+div.rec{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 2px;
+    transform-style: preserve-3d;
+    transform: rotateY(45deg);
+    margin-left: 00px;
+    transition: all .35s ease;
+    box-shadow: -2px 2px 5px 5px rgba(0,0,0,0.05);
+}
+
+div.rec-wrap:hover{
+    z-index: 999;
+}
+
+div.rec-wrap:hover > div.rec{
+    transform: rotateY(0deg);
+    margin-bottom: 200px;
+    z-index: 999;
+}
+
+div.top-album-title{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+div.select-an-album{
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.select-an-album a{
+    font-size: 1.15em;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    padding: .5em;
+}
+
+div.music-evol{
+    margin-top: 10px;
+    position: relative;
+    width: 40em;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.music-evol img{
+    width: auto;
+    height: 50px;
+}
+
+div.nir{
+    background-image: url('https://n8i2g7j7.rocketcdn.me/wp-content/uploads/2020/07/Nirvana-Bleach-Album-Cover-so-scraped-e1595490795701.jpg');
+    background-size: cover;
+}
+
+div.ants{
+    background-image: url('https://i.scdn.co/image/ab67616d0000b273af2d88c14cb157d6b851dbb3');
+    background-size: cover;
+}
+
+div.blk{
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/6/64/Black_Sabbath_-_Paranoid.jpg');
+    background-size: cover;
+}
+
+div.tl{
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/8/82/Tool-Undertow.jpg');
+    background-size: cover;
+}
+
+div.rtj{
+    background-image: url('https://cdn.vox-cdn.com/thumbor/lioKoEzLleZiXfFmA-xOEXWwW8A=/0x0:2040x2040/2040x2040/filters:focal(1020x1020:1021x1021)/cdn.vox-cdn.com/uploads/chorus_asset/file/20073612/runTheJewels_2_cover.jpg');
+    background-size: cover;
+}
+
+div.sev{
+    background-image: url('https://imageio.forbes.com/specials-images/imageserve/5f482c1f654abe0a1d6f3f2d/Album-cover-for--Shabrang--by-Sevdaliza/0x0.jpg?crop=3000,3000,x0,y0,safe&height=711&width=711&fit=bounds');
+    background-size: cover;
+}
+
+div.knk{
+    background-image: url('https://e.snmc.io/i/1200/s/db16b500fa0ba391fe16c2fda15671fa/10029812');
+    background-size: cover;
+}
+
+div.ms{
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/f/f5/MMLonesomeCrowdedWest.jpg');
+    background-size: cover;
+}
+
+div.jd{
+    background-image: url('https://i.scdn.co/image/ab67616d00001e0227cc8b0ed297111f53009772');
+    background-size: cover;
+}
